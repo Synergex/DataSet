@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" targetNamespace="http://www.tempuri.org/NewDataSet.xsd" xmlns:mstns="http://www.tempuri.org/NewDataSet.xsd" xmlns="http://www.tempuri.org/NewDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="CUSTOMERS">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CUST_KEY" type="xs:int" />
+              <xs:element name="CUST_RTYPE" type="xs:short" minOccurs="0" />
+              <xs:element name="CUST_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="CUST_STREET" type="xs:string" minOccurs="0" />
+              <xs:element name="CUST_CITY" type="xs:string" minOccurs="0" />
+              <xs:element name="CUST_STATE" type="xs:string" minOccurs="0" />
+              <xs:element name="CUST_ZIP" type="xs:int" minOccurs="0" />
+              <xs:element name="CUST_CONTACT" type="xs:string" minOccurs="0" />
+              <xs:element name="CUST_PHONE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CUST_FAX" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CUST_GIFT" type="xs:int" minOccurs="0" />
+              <xs:element name="CUST_TCODE" type="xs:string" minOccurs="0" />
+              <xs:element name="CUST_TAXNO" type="xs:int" minOccurs="0" />
+              <xs:element name="CUST_LIMIT" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CUSTOMERS" />
+      <xs:field xpath="mstns:CUST_KEY" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
